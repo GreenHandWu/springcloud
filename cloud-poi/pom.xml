@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springcloud</artifactId>
+        <groupId>com.wzm</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>cloud-poi</artifactId>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.73</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-scratchpad -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-scratchpad</artifactId>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml-schemas</artifactId>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-examples -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-examples</artifactId>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/ooxml-schemas -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>ooxml-schemas</artifactId>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/ooxml-security -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>ooxml-security</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.wzm</groupId>
+            <artifactId>cloud-commons</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+</project>
