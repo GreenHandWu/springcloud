@@ -13,6 +13,7 @@
         <module>cloud-eureka</module>
         <module>cloud-poi</module>
         <module>cloud-zookeeper</module>
+        <module>cloud-activiti</module>
     </modules>
 
     <name>springcloud</name>
@@ -171,4 +172,15 @@
 
         </plugins>
     </build>
+
+    <repositories>
+        <repository>
+            <id>alfresco</id>
+            <name>Activiti Releases</name>
+            <url>https://artifacts.alfresco.com/nexus/content/repositories/activiti-releases/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
 </project>
