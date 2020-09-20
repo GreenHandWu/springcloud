@@ -12,6 +12,7 @@
         <module>cloud-commons</module>
         <module>cloud-eureka</module>
         <module>cloud-poi</module>
+        <module>cloud-zookeeper</module>
     </modules>
 
     <name>springcloud</name>
@@ -32,6 +33,7 @@
         <mybatis.spring.boot.version>2.1.3</mybatis.spring.boot.version>
         <hutool.version>5.3.8</hutool.version>
         <poi.version>4.1.2</poi.version>
+        <zookeeper.version>3.6.2</zookeeper.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -153,6 +155,13 @@
                 <groupId>org.apache.poi</groupId>
                 <artifactId>ooxml-security</artifactId>
                 <version>1.1</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.apache.zookeeper/zookeeper -->
+            <dependency>
+                <groupId>org.apache.zookeeper</groupId>
+                <artifactId>zookeeper</artifactId>
+                <version>${zookeeper.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
