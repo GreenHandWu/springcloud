@@ -35,6 +35,7 @@
         <hutool.version>5.3.8</hutool.version>
         <poi.version>4.1.2</poi.version>
         <zookeeper.version>3.6.2</zookeeper.version>
+        <activiti.version>7.1.0-M9</activiti.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -164,6 +165,20 @@
                 <artifactId>zookeeper</artifactId>
                 <version>${zookeeper.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.activiti.cloud</groupId>
+                <artifactId>activiti-cloud-dependencies</artifactId>
+                <version>${activiti.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.activiti</groupId>
+                <artifactId>activiti-dependencies</artifactId>
+                <version>${activiti.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -175,12 +190,8 @@
 
     <repositories>
         <repository>
-            <id>alfresco</id>
-            <name>Activiti Releases</name>
-            <url>https://artifacts.alfresco.com/nexus/content/repositories/activiti-releases/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
+            <id>activiti-releases</id>
+            <url>https://artifacts.alfresco.com/nexus/content/repositories/activiti-releases</url>
         </repository>
     </repositories>
 </project>
