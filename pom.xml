@@ -14,6 +14,7 @@
         <module>cloud-poi</module>
         <module>cloud-zookeeper</module>
         <module>cloud-activiti</module>
+        <module>cloud-camunda</module>
     </modules>
 
     <name>springcloud</name>
@@ -36,6 +37,7 @@
         <poi.version>4.1.2</poi.version>
         <zookeeper.version>3.6.2</zookeeper.version>
         <activiti.version>7.1.0-M9</activiti.version>
+        <camunda.version>7.13.0</camunda.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -183,6 +185,13 @@
                 <groupId>org.activiti</groupId>
                 <artifactId>activiti-dependencies</artifactId>
                 <version>${activiti.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.camunda.bpm</groupId>
+                <artifactId>camunda-bom</artifactId>
+                <version>${camunda.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
