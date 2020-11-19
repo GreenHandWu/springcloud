@@ -39,7 +39,7 @@
         <zookeeper.version>3.6.2</zookeeper.version>
         <activiti.version>7.1.0-M9</activiti.version>
         <camunda.version>7.13.0</camunda.version>
-        <swagger.spring.boot.version>1.9.1.RELEASE</swagger.spring.boot.version>
+        <knife4j.spring.boot.version>3.0.1</knife4j.spring.boot.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -204,11 +204,11 @@
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatisplus.boot.version}</version>
             </dependency>
-            <!-- https://mvnrepository.com/artifact/com.spring4all/swagger-spring-boot-starter -->
+            <!-- https://mvnrepository.com/artifact/com.github.xiaoymin/knife4j-spring-boot-starter -->
             <dependency>
-                <groupId>com.spring4all</groupId>
-                <artifactId>swagger-spring-boot-starter</artifactId>
-                <version>${swagger.spring.boot.version}</version>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>${knife4j.spring.boot.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
